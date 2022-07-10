@@ -38,6 +38,17 @@ body {
     position:absolute;
 }
 
+.penguin-head{
+    /*half the height of the parent container*/
+    width:50%;
+    height: 45%;
+    background: linear-gradient(45deg, gray, rgb(239, 240, 228) );
+    border-radius: 70% 70% 65% 65%;
+    top: 10%;
+    left: 25%;
+    z-index: 1;
+}
+
 .face{
     height: 70%;
     width: 60%;
@@ -49,9 +60,63 @@ body {
 .face.left{
     left: 5%;
 }
+
 .face.right{
     right: 5%;
 }
+
+.eye {
+    width: 15%;
+    height: 17%;
+    background-color: black;
+    top:45%;
+    border-radius: 50% 50% 50% 50%;
+}
+.eye.left{
+    left: 25%;
+}
+.eye.right{
+    right: 25%;
+}
+.eye-lid{
+    width: 150%;
+    height: 100%;
+    background-color: var(--penguin-face);
+    top: 25%;
+    left: -23%;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.blush{
+    width: 15%;
+    height: 10%;
+    background-color:pink;
+    top: 65%;
+    border-radius: 50% 50% 50% 50%;
+}
+.blush.left{
+    left: 15%;
+}
+.blush.right{
+    right: 15%;
+}
+
+.beak{
+    height: 10%;
+    background-color: orange;
+    border-radius: 50% 50% 50% 50%;
+}
+.beak.top{
+    width: 20%;
+    top: 60%;
+    left: 40%;
+}
+.beak.bottom {
+	width: 16%;
+	top: 65%;
+	left: 42%;
+}
+
 .chin{
     width: 90%;
     height: 70%;
@@ -59,17 +124,6 @@ body {
     top: 25%;
     left: 5%;
     border-radius: 70% 70% 100% 100%;
-}
-  
-.penguin-head{
-    /*half the height of the parent container*/
-    width:50%;
-    height: 45%;
-    background: linear-gradient(45deg, gray, rgb(239, 240, 228) );
-    border-radius: 70% 70% 65% 65%;
-    top: 10%;
-    left: 25%;
-    z-index: 1;
 }
 
 .penguin-body{
