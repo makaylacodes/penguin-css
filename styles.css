@@ -1,16 +1,16 @@
 
 :root{
     --penguin-face:white;
-    --penguin-picorna: orange;
+    --penguin-picorna: rgb(254, 161, 31);
     --penguin-skin: gray;
   }
 
 body {
-    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
+    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(219, 232, 180));
     margin:0;
     padding:0;
     width:100%;
-    height:100vh;
+    height:1=90vh;
     /*Removes the horizontal and vertical scrollbars and prevents 
     programmatic scrolling*/
     overflow:clip;
@@ -19,7 +19,7 @@ body {
 .ground{
   width: 100vw;
   height: 400px;
-  background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+  background: linear-gradient(90deg, rgb(71, 119, 153), rgb(182, 255, 255));
   /*.ground is the third element in stacking on the page*/
   z-index:3;
   position:absolute;
@@ -250,7 +250,7 @@ by 50% in both dimensions*/
 .sun{
     width: 200px;
     height: 200px;
-    background-color:yellow;
+    background-color:rgb(232, 232, 102);
     position:absolute;
     border-radius:50%;
     /*Top and right position the sun in the top right corner of the screen*/
