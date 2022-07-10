@@ -1,6 +1,7 @@
 
 :root{
     --penguin-face:white;
+    --penguin-picorna: orange;
   }
 
 body {
@@ -103,7 +104,7 @@ body {
 
 .beak{
     height: 10%;
-    background-color: orange;
+    background-color: var(--penguin-picorna);
     border-radius: 50% 50% 50% 50%;
 }
 .beak.top{
@@ -161,6 +162,26 @@ body {
     font-weight: initial;
     top:22.5px;
     left: 12px;
+}
+
+.foot{
+    width: 15%;
+    height: 30%;
+    background-color: var(--penguin-picorna);
+    top: 85%;
+    border-radius: 50% 50% 50% 50%;
+    /*positions the feet behind the body*/
+    z-index: -1;
+}
+.foot.left{
+    left: 25%;
+    /*angles the feet*/
+    transform: rotate(80deg);
+  }
+.foot.right{
+    right: 25%;
+    /*angles the feet*/
+    transform: rotate(-80deg);
 }
 
 .left-mountain{
