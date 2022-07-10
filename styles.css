@@ -149,6 +149,20 @@ body {
     opacity: 70%;
 }
 
+.shirt{
+    font: bold 25px Helvetica, sans-serif;
+    top: 165px;
+    left: 127.5px;
+    z-index: 1;
+    color:#6a6969;
+}
+/*Prevents the character's properties from being overridden by the font-weight in shirt*/
+.shirt div{
+    font-weight: initial;
+    top:22.5px;
+    left: 12px;
+}
+
 .left-mountain{
     width: 300px;
     height: 300px;
