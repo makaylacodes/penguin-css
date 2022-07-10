@@ -30,10 +30,14 @@ body {
 .penguin{
     width: 300px;
     height: 300px;
+    
     margin: auto;
     margin-top: 75px;
     position: relative;
     z-index:4;
+    transition-timing-function:ease-in-out ;
+    transition-duration: 1s;
+    transition-delay: 0ms;
 }
 
 .penguin *{
@@ -200,6 +204,10 @@ body {
     /*Keeps the linear gradient on the correct side of the penguin's left arm.
     Rotates by 130 deg and then inverts on the x-axis*/
     transform: rotate(130deg) scaleX(-1);
+    animation-name:wave;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 .arm.right{
     top: 0%;
@@ -231,6 +239,14 @@ body {
     top:225px;
 }
 
+/*Targets the penguin element when active and increases its size
+by 50% in both dimensions*/
+.penguin:active{
+    transform: scale(1.5);
+    /*Indicates to users that the element cannot be dragged*/
+    cursor:not-allowed;
+}
+
 .sun{
     width: 200px;
     height: 200px;
@@ -242,8 +258,21 @@ body {
     right: -75px;
 }  
 
+/*Animates the waving arm*/
 @keyframes wave{
-  
+    10%{
+        /*rotating to retain the scale of the left arm*/
+        transform: rotate(110deg) scaleX(-1);
+    }
+    20%{
+        transform: rotate(130deg) scaleX(-1);
+    }
+    30%{
+        transform: rotate(110deg) scaleX(-1);
+    }
+    40%{
+        transform: rotate(130deg) scaleX(-1);
+    }
 }
 
 
